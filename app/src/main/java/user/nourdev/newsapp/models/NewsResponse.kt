@@ -1,9 +1,9 @@
-package user.nourstore.sampleapp.models
+package user.nourdev.newsapp.models
 
-import user.nourstore.sampleapp.models.Article
+import user.nourdev.newsapp.models.Article
 
 data class NewsResponse(
-    val articles: List<Article>,
+    val articles: MutableList<Article>,
     val status: String,
     val totalResults: Int
 )

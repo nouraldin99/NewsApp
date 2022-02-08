@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import user.nourdev.newsapp.R
 import user.nourdev.newsapp.databinding.ItemArticlePreviewBinding
-import user.nourstore.sampleapp.models.Article
+import user.nourdev.newsapp.models.Article
 
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
@@ -50,7 +50,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
         val article = differ.currentList[position]
         holder.itemView.apply {
             Glide.with(this).load(article.urlToImage).into(binding.ivArticleImage)
-            binding.tvSource.text = article.source.name
+            binding.tvSource.text = article.source?.name
             binding.tvTitle.text = article.title
             binding.tvDescription.text = article.description
             binding.tvPublishedAt.text = article.publishedAt

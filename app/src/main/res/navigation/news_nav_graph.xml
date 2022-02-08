@@ -51,7 +51,7 @@
         android:label="ArticleFragment" >
         <argument
             android:name="article"
-            app:argType="user.nourstore.sampleapp.models.Article" />
+            app:argType="user.nourdev.newsapp.models.Article" />
     </fragment>
 
 

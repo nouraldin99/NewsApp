@@ -3,8 +3,8 @@ package user.nourdev.newsapp.api
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
+import user.nourdev.newsapp.models.NewsResponse
 import user.nourdev.newsapp.util.Constants.Companion.API_KEY
-import user.nourstore.sampleapp.models.NewsResponse
 
 interface NewsApi{
 
